@@ -1,0 +1,19 @@
+.search-input{
+    border: none;
+    background: transparent;
+    font-size: 12px;
+    outline: none;
+}
+ul li{
+    cursor: pointer;
+    /* position: absolute; */
+} 
+
+.active::after{
+display: block;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #7D8184;
+}
+

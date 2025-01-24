@@ -1,0 +1,15 @@
+.rec > div{
+    width: 15px;
+    height: 30px;
+    background-color: #DB4444;
+    border-radius: 3px;
+}
+
+.rec > p{
+    font-size: 10px;
+    color: #DB4444;
+}
+
+.sec-header{
+    margin-top: 20px;
+}

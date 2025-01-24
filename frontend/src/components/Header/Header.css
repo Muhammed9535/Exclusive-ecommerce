@@ -1,0 +1,16 @@
+.header{
+    text-align: center;
+    padding: 10px 0;
+}
+
+.header p{
+    display: inline;
+    color: #FAFAFA;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+}
+.header select{
+    border: none;
+    background-color: transparent;
+    color: white;
+}
