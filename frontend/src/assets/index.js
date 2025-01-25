@@ -9,25 +9,62 @@ import product7 from './Frame 60.png'
 import product8 from './Frame 608.png'
 import product9 from './Frame 68.png'
 import product10 from './Frame 65.png'
-// import computer from './Category-Computer.png'
+import computer from './Category-Computer.png'
+import phone from './Category-CellPhone.png'
+import watch from './Category-SmartWatch.png'
+import headPhone from './Category-HeadPhone.png'
+import pad from './Category-Gamepad.png'
+import banner2 from './Frame 600.png'
+import banner3 from './Frame 684.png'
+import banner4 from './Frame 685.png'
+import banner5 from './Frame 686.png'
+import banner6 from './Frame 687.png'
+import services from './services.png'
+import services1 from './services-two.png'
+import services2 from './services-three.png'
+import Qcode from './Qrcode 1.png'
+import googleplay from './GooglePlay.png'
+import apple from './AppStore.png'
 
 
-// import phone from './Category-CellPhone.png'
-// import watch from './Category-Smart-Watch.png'
-// import headPhone from './Category-HeadPhone.png'
-// import pad from './Category-Gamepad.png'
+export const categories = [
+    {
+        img: computer,
+        name: "Computer"
+    },
+    {
+        img: phone,
+        name: "Phone"
+    },
+    {
+        img: watch,
+        name: "Watch"
+    },
+    {
+        img: headPhone,
+        name: "HeadPhone"
+    }, {
+        img: pad,
+        name: "Game Pad"
 
-// export const category = [
-//     computer,
-//     phone,
-//     watch,
-//     headPhone,
-//     pad
+    }
 
-// ]
+
+]
 
 export const assets = {
     banner,
+    banner2,
+    banner3,
+    banner4,
+    banner5,
+    banner6,
+    services,
+    services1,
+    services2,
+    googleplay,
+    apple,
+    Qcode
 }
 
 export const products = [

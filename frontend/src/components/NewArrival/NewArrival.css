@@ -1,0 +1,44 @@
+.contain{
+    display: grid;
+    /* gap: 20px; */
+}
+
+.img-one{
+    width: 450px;
+    height: 450px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+}
+
+.img-two{
+    width: 487px;
+    height: 250px;
+    grid-column: 3 / 5;
+    grid-row: 1 / 2;
+}
+
+.img-three{
+    width: 200px;
+    height: 180px;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+}
+
+.img-four{
+    width: 200px;
+    height: 180px;
+}
+
+.services{
+    margin-top: 90px;
+    margin-bottom: 50px;
+}
+
+h3{
+    font-size: 12px;
+    margin-top: 20px;
+}
+p{
+    font-size: 10px;
+}
+

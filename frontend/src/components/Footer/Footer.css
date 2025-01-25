@@ -1,0 +1,15 @@
+.footer-container{
+    color: white;
+}
+
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    margin-right: 85px;
+}
+
+.input-field{
+    font-size: 10px;
+    padding: 5px ;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+}

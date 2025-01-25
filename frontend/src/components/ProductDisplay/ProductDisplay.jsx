@@ -6,7 +6,7 @@ import SectionHeader from "../SectionHeader/SectionHeader.jsx";
 import './ProductDisplay.css'
 import { useState } from "react";
 
-function ProductDisplay() {
+function ProductDisplay(props) {
 
     const [display, SetDisplay] = useState(true)
 
@@ -15,9 +15,9 @@ function ProductDisplay() {
     }
 
     return (
-        <div className="section-content" style={{ textAlign: "center" }}>
-            <SectionHeader text="Today's" category="Flash Sales" />
-            <div className={display ? "content d-flex overflow-auto mt-3" : "showgrid"}>
+        <div className="section-content mb-5" style={{ textAlign: "center" }}>
+            <SectionHeader text={props.text} category={props.category} />
+            <div className={display ? "content d-flex overflow-auto mt-5" : "showgrid"}>
                 {products.map((product, index) => {
                     return (
                         <ProductItem key={index} product={product} display={display} />
