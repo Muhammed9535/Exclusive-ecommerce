@@ -1,34 +1,30 @@
-import Nav from "../../components/Nav/Nav"
 import Hero from "../../components/Hero/Hero"
 import ProductDisplay from "../../components/ProductDisplay/ProductDisplay"
 import Category from "../../components/Category/Category"
 import SectionHeader from "../../components/SectionHeader/SectionHeader"
 import { assets } from "../../assets"
 import NewArrival from "../../components/NewArrival/NewArrival"
-import Footer from "../../components/Footer/Footer"
 
 function Home() {
+
+
+
     return (
         <>
-            <div className="container">
-                <Nav />
-            </div>
-            <hr />
-            <div className="container">
+            <div className="container-fluid ">
                 <Hero />
-                <ProductDisplay text="Today's" category="Flash Sales" />
+                <ProductDisplay text="Today's" category="flash sale" />
                 <hr />
                 <Category />
-                <ProductDisplay text="This month" category="Best selling Product" />
+                <ProductDisplay text="This month" category="best selling" />
                 <div className="container">
-                    <img src={assets.banner2} alt="" />
-
+                    <img src={assets.banner2} alt="" style={{ width: "100%" }} />
                 </div>
-                <ProductDisplay text="Our Products" category="Explore Our Products" />
+                <ProductDisplay text="Our Products" category="Explore product" />
                 <SectionHeader text="Featured" category="New Arrival" />
                 <NewArrival />
+
             </div>
-            <Footer />
         </>
     )
 }

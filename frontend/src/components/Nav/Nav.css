@@ -4,12 +4,11 @@
     font-size: 12px;
     outline: none;
 }
-ul li{
-    cursor: pointer;
-    /* position: absolute; */
-} 
+.menu{
+    display: none;
+}
 
-.active::after{
+.line::after{
 display: block;
     content: "";
     width: 100%;
@@ -17,3 +16,130 @@ display: block;
     background-color: #7D8184;
 }
 
+.cart-ppt{
+    position: relative;
+}
+
+.shopping-cart, .nav, .person-icon{
+    color: black;
+}
+.nav{
+    margin-right: 10px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.cart-quantity{
+    position: absolute;
+    bottom: 4px;
+    left: 35px;
+    text-align: center;
+    width: 15px;
+    border-radius: 50%;
+    color: white;
+    background-color: #DB4444;
+    font-size: 8px;
+    border: none;
+}
+.person{
+    position: relative;
+}
+
+.account{
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+.person:hover .account{
+    display: block;
+    right: 10px;
+    background-color: #b2b2b3;
+    padding: 15px;
+    border-radius: 5px;
+    color: white;
+    width: 200px;
+}
+
+.person p{
+    color: white;
+    cursor: pointer;
+}
+.manage-account, .order, .logout, .cancel-order, .reviews{
+    display: flex;
+    gap: 10px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 1200px) {
+    .nav{
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 999px) {
+    .logo{
+        font-size: 28px;
+    }
+    .nav{
+        margin-left: 20px;
+    }
+
+    .top-search{
+        padding: 0 !important;
+    }
+    ul{
+        padding-left: 0 !important;
+    }
+    .shopping-cart, .person-icon, .wishlist{
+        margin-left: 10px !important;
+    }
+}
+
+@media (max-width: 875px) {
+    .top-search{
+        display: none !important;
+    }
+    
+    .nav{
+        margin-left: 30px;
+    }
+
+    .shopping-cart, .person-icon, .wishlist{
+        margin-left: 20px !important;
+    }
+}
+
+@media (max-width: 700px) {
+    .menu{
+        display: block;
+        margin-left: 20px;
+    }
+
+    .navbar{
+        position: relative;
+    }
+    .nav-list{
+        position: absolute;
+     top: 58px;
+     left:0;
+     flex-direction: column;
+     width: 100%;
+     background-color: white    ;
+     height:125px ;
+     justify-content: space-between;
+     padding: 15px 0;
+     transition: all 0.3s linear;
+     transform: translateX(-120%);
+     
+    }
+    .line::after{
+        /* display: none; */
+        width: 100%;
+    }
+
+    .show-menu{
+     /* display: none !important; */
+     transform: translateX(0);
+    }
+}

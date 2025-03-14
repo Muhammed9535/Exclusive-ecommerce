@@ -17,9 +17,7 @@ function Hero() {
                     <li className='mb-3'>Groceries & Pets</li>
                     <li className='mb-3'>Health & Beauty</li>
                 </ul>
-                <div className="banner">
-                    <img src={assets.banner} alt="" />
-                </div>
+                <img src={assets.banner} alt="" className='banner-img' />
             </div>
         </>
     )

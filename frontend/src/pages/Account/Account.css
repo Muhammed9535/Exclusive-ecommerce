@@ -1,0 +1,82 @@
+.col{
+    color: #DB4444;
+}
+li{
+    font-size: 12px;
+}
+
+.account-content{
+    display: flex;
+    gap: 180px;
+}
+
+.account-profile-form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 50px;
+}
+
+.first-name, .last-name, .email, .address{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-name, .email{
+    margin-right: 40px;
+}
+.account-profile-form input{
+    border: none;
+    background-color: #F5F5F5;
+    margin-bottom: 15px;
+    outline: none;
+}
+
+.account-profile-form input::placeholder{
+    padding: 5px 8px;
+    font-size: 10px;
+}
+
+.save-changes{
+    width: fit-content;
+    background-color: #DB4444;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    font-size: 10px;
+}
+
+@media (max-width: 1000px) {
+    .account-content{
+        gap: 50px;
+    }
+}
+
+@media (max-width: 750px) {
+    
+    .name, .address, .contact{
+        flex-direction: column;
+    }
+
+    .first-name, .email{
+        margin-right: 0;
+    }
+    .left-col{
+        width: 30%;
+    }
+    .right-col{
+        width: 60%;
+    }
+}
+
+@media (max-width: 680px) {
+    .account-profile-form{
+        width: 80%;
+        padding: 0 20px;
+    }
+    .contact{
+        /* flex-direction: column; */
+    }
+    .input-header{
+        font-size: 12px;
+    }
+}

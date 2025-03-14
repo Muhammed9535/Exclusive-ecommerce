@@ -1,3 +1,24 @@
 .sidebar li{
     cursor: pointer;
 }
+.banner-img{
+    width: 80vw;
+}
+
+
+@media (max-width: 1200px) {
+    .banner-img{
+        /* width: 70vw; */
+    }
+}
+
+
+@media (max-width: 860px) {
+
+    .banner-img{
+        width: 100%;
+    }
+    .sidebar{
+        display: none;
+    }
+}

@@ -1,0 +1,7 @@
+.img-icon{
+    position: relative;
+}
+.cancel-icon{
+    position: absolute;
+    cursor: pointer;
+}

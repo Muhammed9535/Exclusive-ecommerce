@@ -1,0 +1,10 @@
+.menu{
+    display: none;
+    cursor: pointer;
+}
+
+@media (max-width: 977px) {
+    .menu{
+        display: block;
+    }
+}

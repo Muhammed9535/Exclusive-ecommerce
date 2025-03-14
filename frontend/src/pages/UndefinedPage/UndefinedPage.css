@@ -1,0 +1,11 @@
+.not-found{
+    font-size: 100px;
+}
+.back-home{
+    text-align: center;
+    font-size: 10px;
+    color: white;
+    border-radius: 5px;
+    background-color: #DB4444;
+    width: fit-content;
+}

@@ -1,0 +1,44 @@
+.checkout-company-name, .checkout-first-name, .checkout-phone, .checkout-address, .checkout-town, .checkout-apartment, .checkout-company-name, .checkout-email{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.checkout-company-name input, .checkout-first-name input, .checkout-phone input, .checkout-address input, .checkout-town input, .checkout-apartment input, .checkout-company-name input, .checkout-email input{
+    background-color: #F5F5F5;
+    border: none;
+    outline: none;
+}
+
+.checkout-company-name  label, .checkout-first-name label, .checkout-phone label, .checkout-address label, .checkout-town label, .checkout-apartment label, .checkout-company-name label, .checkout-email label{
+    margin-bottom: 5px;   
+    color: #868484;
+}
+
+.checkout-right-col{
+    width: 50%;
+}
+
+.place-order{
+    font-size: 10px;
+    border: none;
+    background-color: #DB4444;
+    color: white;
+    border-radius: 3px;
+}
+
+@media (max-width: 770px) {
+ .checkout-form{
+    flex-direction: column;
+ }
+ .checkout-left-col{
+    margin-bottom: 30px;
+ }
+
+ .bank-logo{
+    display: none;
+ }
+ .checkout-right-col{
+    width: 100%;
+ }
+}

@@ -1,0 +1,20 @@
+.order-container .order{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #DB4444;
+    padding: 10px;
+}
+
+.order-container p{
+    font-size: 12px;
+}
+
+.order-name{
+    font-weight: bold;
+}
+
+@media (max-width:989px) {
+    button{
+        font-size: 12px;
+    }
+}

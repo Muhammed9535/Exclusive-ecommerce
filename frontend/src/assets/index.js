@@ -25,6 +25,16 @@ import services2 from './services-three.png'
 import Qcode from './Qrcode 1.png'
 import googleplay from './GooglePlay.png'
 import apple from './AppStore.png'
+import formpic from './Side Image.png'
+import story from './shopping-bags.png'
+import servicesOne from './Services one.png'
+import servicestwo from './Services two.png'
+import servicesthree from './Services three.png'
+import servicesfour from './Services four.png'
+import founderone from './Frame 875.png'
+import foundertwo from './Frame 874.png'
+import founderthree from './Frame 876.png'
+import payImg from './Frame 834.png'
 
 
 export const categories = [
@@ -64,7 +74,17 @@ export const assets = {
     services2,
     googleplay,
     apple,
-    Qcode
+    Qcode,
+    formpic,
+    story,
+    servicesOne,
+    servicesfour,
+    servicesthree,
+    servicestwo,
+    founderone,
+    foundertwo,
+    founderthree,
+    payImg
 }
 
 export const products = [

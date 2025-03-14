@@ -1,0 +1,8 @@
+.feedbacks{width: 100%;}
+
+.feedback{
+    justify-content: space-between;
+    border: 1px solid #DB4444;
+    width: 100%;
+    flex-wrap: wrap;
+}

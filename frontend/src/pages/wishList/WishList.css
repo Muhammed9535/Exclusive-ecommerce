@@ -1,0 +1,17 @@
+
+.showgrid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+
+}
+
+.content::-webkit-scrollbar{
+  display: none;
+}
+
+.all-to-bag{
+  padding: 8px 15px;
+  border: 1px solid black;
+  font-size: 10px;
+}
