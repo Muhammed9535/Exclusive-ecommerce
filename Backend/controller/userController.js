@@ -68,7 +68,7 @@ const loginUser = (req, res, next) => {
                 return next(err);
             }
             const userName = await pool.query("SELECT name FROM users WHERE id = $1", [req.user.id])
-
+            console.log(req.session);
             return res.json({ success: true, sessionId: req.sessionID, message: "login successful", name: userName.rows[0].name });
         });
     })(req, res, next);
