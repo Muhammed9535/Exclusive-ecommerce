@@ -1,20 +1,53 @@
 import pool from "../config/eccormerceModel.js";
 import fs from 'fs'
+import { v2 as cloudinary } from 'cloudinary';
+
+
+
 const addProduct = async (req, res) => {
-    const { prodName, prodPrice, prodCategory } = req.body
-    let image_filename = req.file.filename;
+    const { prodName, prodPrice, prodCategory } = req.body;
+    const imageFile = req.file; // Assuming you are using Multer to handle file uploads
+
+    if (!imageFile) {
+        return res.status(400).json({ success: false, message: "No file uploaded!" });
+    }
 
     try {
-        const result = await pool.query("INSERT INTO products (prodimg, prodname, prodprice, prodcategory) VALUES ($1, $2, $3, $4) RETURNING *", [image_filename, prodName, prodPrice, prodCategory])
+        // Upload image to Cloudinary
+        cloudinary.uploader.upload_stream(
+            { folder: "uploads" }, // Folder in Cloudinary
+            async (error, result) => {
+                if (error) {
+                    console.error("Cloudinary Upload Error:", error);
+                    return res.status(500).json({ success: false, message: error.message });
+                }
 
+                const prodImg = result.secure_url; // Get Cloudinary URL
+                // Insert product into PostgreSQL
+                try {
+                    const dbResult = await pool.query(
+                        "INSERT INTO products (prodimg, prodname, prodprice, prodcategory) VALUES ($1, $2, $3, $4) RETURNING *",
+                        [prodImg, prodName, prodPrice, prodCategory]
+                    );
 
-        res.json({ success: true, message: result.rows[0] })
+                    res.json({
+                        success: true,
+                        message: dbResult.rows[0], // Return saved product details
+                    });
+
+                } catch (dbError) {
+                    console.error("Database Insert Error:", dbError);
+                    res.status(500).json({ success: false, message: "Error saving product to database." });
+                }
+            }
+        ).end(imageFile.buffer); // Upload the image from memory buffer
 
     } catch (error) {
-        console.log(error)
-        res.json({ success: false, message: error })
+        console.error("Upload Route Error:", error);
+        res.status(500).json({ success: false, message: "Upload failed!" });
     }
-}
+};
+
 
 const removeProduct = async (req, res) => {
     try {

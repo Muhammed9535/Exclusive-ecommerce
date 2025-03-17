@@ -44,7 +44,7 @@ function ListItem({ url }) {
             {(list || []).map((item, index) => {
                 return (
                     <div className="item" key={index}>
-                        <img src={`${url}/images/` + item.prodimg} className='item-image' />
+                        <img src={item.prodimg} className='item-image' />
                         <p>{item.prodname}</p>
                         <p>{item.prodcategory}</p>
                         <p>{item.prodprice}</p>

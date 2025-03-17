@@ -152,7 +152,7 @@ function Checkout() {
                                 return (
                                     <div key={index} className='d-flex justify-content-between mb-3' >
                                         <div className='d-flex align-items-center'>
-                                            <img src={url + "/images/" + item.prodimg} alt="" style={{ width: "40px" }} />
+                                            <img src={item.prodimg} alt="" style={{ width: "40px" }} />
                                             <p className='mb-0 ms-3'><b> {item.prodname} </b></p>
                                         </div>
                                         <p className='mb-0'>{item.prodprice * cartItem[item.id]}</p>

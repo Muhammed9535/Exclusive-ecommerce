@@ -1,6 +1,6 @@
 import SectionHeader from "../SectionHeader/SectionHeader";
-import { categories } from "../../assets/index.js";
 import './Category.css'
+import { categories } from '../../assets'
 
 function Category() {
     return (

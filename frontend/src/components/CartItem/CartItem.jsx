@@ -13,7 +13,7 @@ function CartItem({ product, quantity }) {
         <>
             <div className="img-name d-flex align-items-center">
                 <div className="img-con me-3">
-                    <img src={url + "/images/" + product.prodimg} alt="" style={{ width: "40px" }} />
+                    <img src={product.prodimg} alt="" style={{ width: "40px" }} />
                     <HighlightOffOutlinedIcon style={{ fontSize: "10px" }} className='cancel-icon' onClick={() => {
                         removeItemFromCart(product.id)
                     }} />

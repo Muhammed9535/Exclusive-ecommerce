@@ -24,7 +24,7 @@ function ProductItem({ product, display }) {
     return (
         <div className={display ? "product-item me-4" : ""}>
             <div className="img-con p-3 position-relative">
-                <img src={url + "/images/" + product.prodimg} alt="" style={{ width: "190px", height: "180px" }} />
+                <img src={product.prodimg} alt="" style={{ width: "190px", height: "180px" }} />
                 <p className='position-absolute top-0 discount'>15%</p>
                 <IconButton className='position-absolute top-0 end-0' onClick={() => {
                     addToWishList(product.id)
