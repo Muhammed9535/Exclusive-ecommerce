@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const url = "http://localhost:3000"
+  const url = "https://exclusive-ecommerce-730s.onrender.com"
   const [menu, setMenu] = useState(true)
 
   const changeMenuIcon = () => {
