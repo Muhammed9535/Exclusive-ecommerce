@@ -5,7 +5,6 @@ import { assets } from "../../assets"
 import { StoreContext } from "../../context/context"
 import { useNavigate } from "react-router"
 import { toast } from 'react-toastify'
-import { assets, } from '../../assets';
 
 function SignUp() {
 
