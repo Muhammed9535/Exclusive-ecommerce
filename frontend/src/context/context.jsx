@@ -19,7 +19,7 @@ function StoreContextProvider(props) {
     const [person, setPerson] = useState("stranger")
 
 
-    const url = "http://localhost:3000";
+    const url = "https://exclusive-ecommerce-730s.onrender.com";
 
 
 
