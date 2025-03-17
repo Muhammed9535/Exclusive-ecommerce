@@ -1,6 +1,7 @@
 import { useContext, useEffect, useState } from "react"
 import axios from 'axios'
 import './SignUp.css'
+import { assets } from "../../assets"
 import { StoreContext } from "../../context/context"
 import { useNavigate } from "react-router"
 import { toast } from 'react-toastify'
