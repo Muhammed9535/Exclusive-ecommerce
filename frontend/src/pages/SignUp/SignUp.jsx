@@ -46,21 +46,17 @@ function SignUp() {
             newUrl += "/api/user/register";
         }
 
-        console.log(newUrl)
 
         const response = await axios.post(newUrl, data, { withCredentials: true })
 
         if (response.data.success) {
             setShowLogin(false);
-            console.log(response.data.sessionId)
-            console.log(response.data.success)
             localStorage.setItem("log in token", response.data.sessionId);
             navigate("/");
             await loadCartData()
             await loadWishList()
             setSessionId(response.data.sessionId)
             setPerson(response.data.name)
-            console.log(response.data.name);
 
             toast(response.data.message)
 
