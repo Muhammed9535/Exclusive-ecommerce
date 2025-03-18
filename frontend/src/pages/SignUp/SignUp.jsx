@@ -61,7 +61,6 @@ function SignUp() {
             toast(response.data.message)
 
         } else {
-            console.log(response.data.message);
             toast(response.data.message)
         }
 
