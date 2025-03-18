@@ -15,9 +15,9 @@ import "dotenv/config"
 
 
 
-app.set("trust proxy", 1);
 
 const app = express()
+app.set("trust proxy", 1);
 const port = process.env.PORT || 3000;
 pool.connect()
 
