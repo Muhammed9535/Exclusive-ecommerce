@@ -36,10 +36,10 @@ app.use(session({
     }),
     secret: process.env.SESSION_SECRET,
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     cookie: {
-        secure: false,
-        httpOnly: false,
+        secure: process.env.NODE_ENV === "production",
+        httpOnly: true,
         // sameSite: 'none',
         maxAge: 1000 * 60 * 60 * 24,
     }
