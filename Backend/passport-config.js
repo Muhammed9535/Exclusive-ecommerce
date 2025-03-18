@@ -46,6 +46,7 @@ passport.deserializeUser(async (id, done) => {
         if (result.rows[0].length === 0) {
             return done(new Error("User not found"))
         }
+        console.log("passport deserialize")
         done(null, result.rows[0])
     } catch (error) {
         return done(error)
