@@ -16,3 +16,9 @@ h3{
 p{
     font-size: 10px;
 }
+
+@media (max-width: 500px) {
+    .services{
+        gap: 20px;
+    }
+}

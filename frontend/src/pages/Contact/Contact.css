@@ -76,3 +76,12 @@
     margin: 10px 0;
 }
 }
+
+@media (max-width: 560px) {
+    .contact-content{
+        flex-direction: column;
+    }
+    .contact-right-col{
+        width: 100%;
+    }
+}
