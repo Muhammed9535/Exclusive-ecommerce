@@ -6,7 +6,7 @@ const addOrder = async (req, res) => {
 
     const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-    const frontend_url = "http://localhost:5173"
+    const frontend_url = "https://exclusive-ecommerce-frontend.onrender.com"
     try {
 
         const newOrder = await pool.query("INSERT INTO orders(user_id, payment, items, details,amount) VALUES ($1, $2, $3, $4, $5) RETURNING *", [req.user.id, payment, items, details, amount])
