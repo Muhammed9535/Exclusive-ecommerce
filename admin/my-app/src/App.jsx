@@ -13,7 +13,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const url = "https://backend-production-c88f.up.railway.app/"
+  const url = "https://backend-production-c88f.up.railway.app"
   const [menu, setMenu] = useState(true)
 
   const changeMenuIcon = () => {
