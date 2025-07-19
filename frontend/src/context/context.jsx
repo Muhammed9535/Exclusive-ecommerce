@@ -19,7 +19,7 @@ function StoreContextProvider(props) {
     const [person, setPerson] = useState("stranger")
 
 
-    const url = "https://backend-production-c88f.up.railway.app/";
+    const url = "https://backend-production-c88f.up.railway.app";
 
 
 
